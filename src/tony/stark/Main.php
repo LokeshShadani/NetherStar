@@ -30,7 +30,7 @@ class Main extends Pluginbase implements Listener {
 
     public function onEnable(): void {
 
-        $this->getLogger()->info("SkyblockMenu Is Enabled");
+        
 
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
@@ -38,7 +38,7 @@ class Main extends Pluginbase implements Listener {
 
     public function onDisable(): void {
 
-        $this->getLogger()->info("SkyblockMenu Is Closed");
+        
 
     }
 
