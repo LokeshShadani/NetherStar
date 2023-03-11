@@ -1,0 +1,17 @@
+name: NetherStar
+main: tony\stark\Main
+author: TonyStark
+api: 4.0.0
+version: 1.0.0
+
+
+commands:
+  menu:
+    description: "Open The Menu Where You Can Access Various commands easily"
+    permission: menu.use
+
+permissions:
+  menu.use:
+    description: "It Is The Permission For User To Use The Command menu"
+    default: OP
+#All Rights Are Reserved To TonyStark If You Are Using Plugin Dont Change The author
