@@ -14,7 +14,7 @@ use pocketmine\plugin\Pluginbase;
 
 use pocketmine\player\Player;
 
-use pocketmine\server;
+use pocketmine\Server;
 
 use FormAPI\SimpleForm;
 
@@ -30,17 +30,17 @@ class Main extends Pluginbase implements Listener {
 
     public function onEnable(): void {
 
-        $this->getLogger()->info("SkyblockMenu Is Enabled");
+        
 
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
     }
 
-    public function onDisable(): void {
+    
 
-        $this->getLogger()->info("SkyblockMenu Is Closed");
+        
 
-    }
+    
 
     public function onJoin(PlayerJoinEvent $e) {
 
@@ -110,7 +110,7 @@ class Main extends Pluginbase implements Listener {
 
     public function newSimpleForm($player){
 
-    	$form  = new SimpleForm(function(Player $player, int $data =null){
+    	$form  = new SimpleForm(function(Player $player, int $data = null){
 
     		if ($data === null){
 
@@ -134,7 +134,7 @@ class Main extends Pluginbase implements Listener {
 
     			case 2:
 
-    			$this->dispatchCommand($player,"ec");           
+    			$this->dispatchCommand($player,"enderchest");           
 
     			break;
 
